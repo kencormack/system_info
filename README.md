@@ -23,7 +23,7 @@ call sudo only for those commands that need root privilege.
 
 The following packages are required, to do a full inspection:
   lshw, usbutils, util-linux, alsa-utils, bluez, wireless-tools, bc, dc,
-  and wiringpi
+  i2c-tools, and wiringpi
 
 The script will explicitly test that each of those packages is installed.
 If any are missing, the script will inform the user, and instruct to install.
