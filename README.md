@@ -72,3 +72,7 @@ Tested on the following hardware:
   PiOled i2c display,
   USB flash drive,
   USB Ethernet adapter
+
+  Pi0WH (William's),
+  Raspbian Buster,
+  PiOled i2c display
