@@ -44,6 +44,7 @@ perform a port scan if it finds "nmap" installed.  If neither "cups" nor
 "nmap" is present, the script will silently skip those checks and move on.
  
 Tested on the following hardware:
+
   hostname: pi-media (Ken's)
   Pi 3B+ w/ Raspbian Stretch
   X150 9-port USB hub
