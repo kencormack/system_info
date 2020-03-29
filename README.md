@@ -45,30 +45,30 @@ perform a port scan if it finds "nmap" installed.  If neither "cups" nor
  
 Tested on the following hardware:
 
-  hostname: pi-media (Ken's)
-  Pi 3B+ w/ Raspbian Stretch
-  X150 9-port USB hub
-  DVK512 board w/ RTC
-  DockerPi Powerboard
-  fit_StatUSB USB LED
-  USB-attached 128GB SATA III SSD drive
-  USB-attached 4TB hard drive
+  hostname: pi-media (Ken's),
+  Pi 3B+ w/ Raspbian Stretch,
+  X150 9-port USB hub,
+  DVK512 board w/ RTC,
+  DockerPi Powerboard,
+  fit_StatUSB USB LED,
+  USB-attached 128GB SATA III SSD drive,
+  USB-attached 4TB hard drive,
   HDMI Sony Flatscreen TV
 
-  hostname: pi-dev (Ken's)
-  Pi 3B w/ Raspbian Buster
-  X150 9-port USB hub
-  DVK512 board w/ RTC
-  DockerPi Powerboard
-  fit_StatUSB USB LED
-  USB Bluetooth dongle (onboard BT disabled)
-  Hauppauge WinTV HVR950Q USB TV Tuner
-  RTL-SDR USB Software Defined Radio
-  X820 SATA III Board w/ 1TB SSD
+  hostname: pi-dev (Ken's),
+  Pi 3B w/ Raspbian Buster,
+  X150 9-port USB hub,
+  DVK512 board w/ RTC,
+  DockerPi Powerboard,
+  fit_StatUSB USB LED,
+  USB Bluetooth dongle (onboard BT disabled),
+  Hauppauge WinTV HVR950Q USB TV Tuner,
+  RTL-SDR USB Software Defined Radio,
+  X820 SATA III Board w/ 1TB SSD,
   Headless - SSH and VNC only (No Display)
 
-  hostname: pi-devel-2GB (William's)
-  Pi 4B w/ Raspbian Buster (2GB memory)
-  PiOled i2c display
-  USB flash drive
+  hostname: pi-devel-2GB (William's),
+  Pi 4B w/ Raspbian Buster (2GB memory),
+  PiOled i2c display,
+  USB flash drive,
   USB Ethernet adapter
