@@ -36,7 +36,7 @@ http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/
 
 When this script checks for the presence of wiringpi, it allows for either
 the repository package, or, in the absence of the repository package,
-the compiled and install binary from wiringpi.com
+the compiled and installed binary from wiringpi.com
 
 In addition to the required packages listed above, this script can report
 on any configured printers if it finds that "cups" is installed, and will
