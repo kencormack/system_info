@@ -27,8 +27,7 @@ The following packages are required, to do a full inspection:
 
 An allowance is made with regard to wiringpi.  As the repository package
 available at the time of this writing does not support the Pi 4, some
-people may choose instead to compile wiringpi from the source tar-ball
-available at:
+people may choose instead to install wiringpi from the update available at:
 http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/
 
 When this script checks for the presence of wiringpi, it allows for either
