@@ -1,0 +1,1254 @@
+===============================================================================
+ RASPBERRY PI SYSTEM INFORMATION TOOL - v1.2.6
+
+Written By Ken Cormack, unixken@yahoo.com
+With contributions from William Stearns, william.l.stearns@gmail.com
+Released March, 2020
+
+Report Date and Time:
+Sun Mar 29 21:23:38 EDT 2020
+
+Checking software dependencies...
+All required tools are installed.
+
+===============================================================================
+ SYSTEM IDENTIFICATION
+
+Hostname: pi-dev
+Serial #: 00000000c3fe1a77
+
+===============================================================================
+ MODEL AND FIRMWARE VERSION
+
+Raspberry Pi 3 Model B Rev 1.2
+
+Feb 12 2020 12:39:27 
+Copyright (c) 2012 Broadcom
+version 53a54c770c493957d99bf49762dfabc4eee00e45 (clean) (release) (start_x)
+
+===============================================================================
+ CPU INFORMATION
+
+Architecture:        armv7l
+Byte Order:          Little Endian
+CPU(s):              4
+On-line CPU(s) list: 0-3
+Thread(s) per core:  1
+Core(s) per socket:  4
+Socket(s):           1
+Vendor ID:           ARM
+Model:               4
+Model name:          Cortex-A53
+Stepping:            r0p4
+CPU max MHz:         1375.0000
+CPU min MHz:         1375.0000
+BogoMIPS:            38.40
+Flags:               half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32
+
+===============================================================================
+ DECODED SYSTEM REVISION NUMBER
+
+Revision      : 2a22082
+PCB Revision  : 2
+Model Name    : 3B
+Processor     : BCM2837
+Manufacturer  : Embest
+Memory Size   : 1024 MB
+Encoded Flag  : revision is a bit field
+Warranty Void : 'warranty void' bit is set
+
+===============================================================================
+ OTP BOOT-FROM-USB STATUS
+
+Boot From USB: enabled
+
+===============================================================================
+ OPERATING SYSTEM
+
+Linux pi-dev 4.19.97-v7+ #1294 SMP Thu Jan 30 13:15:58 GMT 2020 armv7l GNU/Linux
+Raspbian GNU/Linux 10 (buster)
+
+up 11 minutes
+
+===============================================================================
+ CMDLINE.TXT
+
+console=tty1 root=PARTUUID=5e3da3da-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait splash plymouth.ignore-serial-consoles ipv6.disable=0
+
+===============================================================================
+ CONFIG.TXT SETTINGS
+
+framebuffer_width=1920
+framebuffer_height=1080
+hdmi_force_hotplug=1
+hdmi_group=2
+hdmi_mode=82
+hdmi_drive=2
+config_hdmi_boost=4
+gpu_mem=320
+dtparam=i2c_arm=on
+dtparam=audio=on
+dtoverlay=i2c-rtc,pcf8563
+decode_MPG2=0x4262175,0xb40aeceb
+decode_WVC1=0x66cfb97b,0xa3fdb6a2
+start_x=1
+max_usb_current=1
+force_turbo=1
+arm_freq=1375
+gpu_freq=525
+over_voltage=3
+sdram_freq=525
+sdram_schmoo=0x02000020
+over_voltage_sdram_p=4
+over_voltage_sdram_i=3
+over_voltage_sdram_c=3
+
+===============================================================================
+ MEMORY SPLIT
+
+ARM: 704 MB
+GPU: 320 MB
+
+===============================================================================
+ ACTIVE DISPLAY DRIVER
+
+Standard Broadcom Display Driver
+
+===============================================================================
+ PROCESSOR SPEEDS
+
+ CPU: 1375 MHz
+CORE: 525 MHz
+
+===============================================================================
+ CLOCK FREQUENCIES
+
+arm:	frequency(45)=1375000000
+core:	frequency(1)=525000000
+h264:	frequency(28)=0
+isp:	frequency(42)=525000000
+v3d:	frequency(43)=525000000
+uart:	frequency(22)=0
+pwm:	frequency(25)=0
+emmc:	frequency(47)=200000000
+pixel:	frequency(29)=148500000
+vec:	frequency(10)=0
+hdmi:	frequency(9)=163683000
+dpi:	frequency(4)=0
+
+===============================================================================
+ VOLTAGES
+
+   core:   volt=1.3563V
+sdram_c:   volt=1.2750V
+sdram_i:   volt=1.2750V
+sdram_p:   volt=1.3000V
+
+===============================================================================
+ TEMPERATURE
+
+Temp: 46.2°C (115.16°F)
+
+===============================================================================
+ SCALING GOVERNOR
+
+ondemand
+(...but overridden by "force_turbo=1" found in config.txt)
+
+===============================================================================
+ DECODED PROCESSOR THROTTLING STATUS
+
+Throttle Status: 0x0
+
+Undervolted:
+    Currently: no
+   Since Boot: no
+
+Throttled:
+    Currently: no
+   Since Boot: no
+
+Frequency Capped:
+    Currently: no
+   Since Boot: no
+
+Softlimit:
+    Currently: no
+   Since Boot: no
+
+===============================================================================
+ CODECS
+
+MPG2=enabled	(licensed)
+WVC1=enabled	(licensed)
+AFIF=disabled
+AGIF=enabled
+FLAC=enabled
+H263=enabled
+H264=enabled
+MJPA=enabled
+MJPB=enabled
+MJPG=enabled
+MPG4=enabled
+MVC0=enabled
+MVCG=disabled
+PCM=enabled
+THRA=enabled
+VORB=enabled
+VP6=enabled
+VP8=enabled
+WMV9=enabled
+
+===============================================================================
+ CAMERA
+
+supported=1 detected=0
+
+===============================================================================
+ I2CDETECT
+
+i2c-1	i2c       	bcm2835 I2C adapter             	I2C adapter
+i2c-3	i2c       	Realtek RTL2832U reference design	I2C adapter
+i2c-4	i2c       	i2c-3-mux (chan_id 0)           	I2C adapter
+i2c-5	i2c       	au0828                          	I2C adapter
+
+ I2C BUS: 1
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
+10: -- -- -- -- 14 -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- UU -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- -- --                         
+
+ I2C BUS: 3
+Error: Bus doesn't support detection commands
+
+ I2C BUS: 4
+Error: Bus doesn't support detection commands
+
+ I2C BUS: 5
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: 30 31 32 33 34 35 36 37 -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- UU -- -- -- -- -- -- -- -- 
+50: 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 
+60: -- UU -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- -- --                         
+
+===============================================================================
+ RTC (REALTIME CLOCK)
+
+[    9.448796] rtc-pcf8563 1-0051: rtc core: registered rtc-pcf8563 as rtc0
+
+rtc_pcf8563            16384  0
+
+lrwxrwxrwx 1 root root      4 Mar 29 21:11 /dev/rtc -> rtc0
+crw------- 1 root root 253, 0 Mar 29 21:11 /dev/rtc0
+
+Hardware RTC says:
+2020-03-29 21:23:40.953695-04:00
+
+Operating System says:
+Sun Mar 29 21:23:39 EDT 2020
+
+===============================================================================
+ USB AND OTHER DEVICE INFO
+
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 004: ID 1a40:0201 Terminus Technology Inc. FE 2.1 7-port Hub
+Bus 001 Device 005: ID 2047:03df Texas Instruments 
+Bus 001 Device 006: ID 2040:7200 Hauppauge 
+Bus 001 Device 007: ID 138c:55aa  
+Bus 001 Device 008: ID 19ff:0239 Dynex 
+Bus 001 Device 009: ID 1a40:0201 Terminus Technology Inc. FE 2.1 7-port Hub
+Bus 001 Device 010: ID 0bda:2838 Realtek Semiconductor Corp. RTL2838 DVB-T
+
+Bus info        Device     Class          Description
+=====================================================
+                           system         Raspberry Pi 3 Model B Rev 1.2
+                           bus            Motherboard
+cpu@0                      processor      cpu
+cpu@1                      processor      cpu
+cpu@2                      processor      cpu
+cpu@3                      processor      cpu
+                           memory         684MiB System memory
+usb@1           usb1       bus            DWC OTG Controller
+usb@1:1                    bus            SMC9514 Hub
+usb@1:1.1       eth0       network        SMSC9512/9514 Fast Ethernet Adapter
+usb@1:1.2       scsi0      storage        X820 V3.0
+scsi@0:0.0.0    /dev/sda   disk           1TB SSD 860 QVO 1TB
+scsi@0:0.0.0,1  /dev/sda1  volume         256MiB Windows FAT volume
+scsi@0:0.0.0,2  /dev/sda2  volume         931GiB EXT4 volume
+usb@1:1.3                  bus            USB 2.0 Hub [MTT]
+usb@1:1.3.3                multimedia     WinTV HVR-950
+usb@1:1.3.4                generic        BCM20702A0
+usb@1:1.3.7                bus            USB 2.0 Hub [MTT]
+usb@1:1.3.7.1              generic        RTL2838UHIDIR
+usb@1:1.5                  communication  fit_StatUSB
+                wlan0      network        Wireless interface
+
+===============================================================================
+ STORAGE DEVICES
+
+  *-usb:1
+       description: Mass storage device
+       product: X820 V3.0
+       vendor: SupTronics
+       physical id: 2
+       bus info: usb@1:1.2
+       logical name: scsi0
+       version: 1.00
+       serial: 20180809000F
+       capabilities: usb-2.10 scsi emulated
+       configuration: driver=usb-storage speed=480Mbit/s
+
+H/W path        Device     Class          Description
+=====================================================
+/1/1/2          scsi0      storage        X820 V3.0
+/1/1/2/0.0.0    /dev/sda   disk           1TB SSD 860 QVO 1TB
+/1/1/2/0.0.0/1  /dev/sda1  volume         256MiB Windows FAT volume
+/1/1/2/0.0.0/2  /dev/sda2  volume         931GiB EXT4 volume
+
+===============================================================================
+ DISK CONFIGURATION
+
+NAME   FSTYPE   SIZE MOUNTPOINT LABEL  UUID                                 PARTUUID                             MODEL
+sda           931.5G                                                                                             Samsung_SSD_860_QVO_1TB
+|-sda1 vfat     256M /boot      boot   9F2D-0578                            5e3da3da-01                          
+`-sda2 ext4   931.3G /          rootfs efc2ea8b-042f-47f5-953e-577d8860de55 5e3da3da-02                          
+
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/root      ext4      917G   18G  862G   3% /
+/dev/sda1      vfat      253M   53M  200M  21% /boot
+
+===============================================================================
+ FSTAB FILE
+
+proc                  /proc  proc  defaults          0 0
+PARTUUID=5e3da3da-01  /boot  vfat  defaults          0 2
+PARTUUID=5e3da3da-02  /      ext4  defaults,noatime  0 1
+
+===============================================================================
+ MULTIMEDIA DEVICES
+
+  *-usb:0
+       description: Audio device
+       product: WinTV HVR-950
+       vendor: Hauppauge
+       physical id: 3
+       bus info: usb@1:1.3.3
+       version: 0.05
+       serial: 4035592585
+       capabilities: usb-2.00 audio-control
+       configuration: driver=snd-usb-audio maxpower=500mA speed=480Mbit/s
+
+===============================================================================
+ ALSA MODULES
+
+ 0 snd_bcm2835
+ 1 snd_usb_audio
+
+===============================================================================
+ ALSA SOUND HARDWARE
+
+ 0 [ALSA           ]: bcm2835_alsa - bcm2835 ALSA
+                      bcm2835 ALSA
+ 1 [HVR950Q        ]: USB-Audio - HVR-950Q
+                      Hauppauge HVR-950Q at usb-3f980000.usb-1.3.3, high speed
+
+===============================================================================
+ ALSA CARD-0 INFO
+
+Simple mixer control 'PCM',0
+  Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+  Playback channels: Mono
+  Limits: Playback -10239 - 400
+  Mono: Playback 400 [100%] [4.00dB] [on]
+
+===============================================================================
+ ALSA CARD-1 INFO
+
+Simple mixer control 'Digital In',0
+  Capabilities: cswitch cswitch-joined
+  Capture channels: Mono
+  Mono: Capture [on]
+
+===============================================================================
+ ALSA PLAYBACK AND CAPTURE DEVICES
+
+**** List of PLAYBACK Hardware Devices ****
+card 0: ALSA [bcm2835 ALSA], device 0: bcm2835 ALSA [bcm2835 ALSA]
+  Subdevices: 7/7
+  Subdevice #0: subdevice #0
+  Subdevice #1: subdevice #1
+  Subdevice #2: subdevice #2
+  Subdevice #3: subdevice #3
+  Subdevice #4: subdevice #4
+  Subdevice #5: subdevice #5
+  Subdevice #6: subdevice #6
+card 0: ALSA [bcm2835 ALSA], device 1: bcm2835 IEC958/HDMI [bcm2835 IEC958/HDMI]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 0: ALSA [bcm2835 ALSA], device 2: bcm2835 IEC958/HDMI1 [bcm2835 IEC958/HDMI1]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+
+**** List of CAPTURE Hardware Devices ****
+card 1: HVR950Q [HVR-950Q], device 0: USB Audio [USB Audio]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+
+===============================================================================
+ ACM COMMUNICATION DEVICES
+
+  *-usb:3
+       description: Communication device
+       product: fit_StatUSB
+       vendor: Compulab LTD
+       physical id: 5
+       bus info: usb@1:1.5
+       version: 2.00
+       serial: 073BB0462A001200
+       capabilities: usb-2.00
+       configuration: driver=cdc_acm maxpower=100mA speed=12Mbit/s
+
+===============================================================================
+ UARTS AND USB SERIAL PORTS
+
+lrwxrwxrwx 1 root root          7 Mar 29 21:11 /dev/serial1 -> ttyAMA0
+crw-rw-rw- 1 root dialout 166,  0 Mar 29 21:12 /dev/ttyACM0
+crw-rw---- 1 root dialout 204, 64 Mar 29 21:11 /dev/ttyAMA0
+
+ SERIAL1... (/dev/ttyAMA0, PL011)
+speed 9600 baud; rows 0; columns 0; line = 0;
+intr = ^C; quit = ^\; erase = ^?; kill = ^U; eof = ^D; eol = <undef>;
+eol2 = <undef>; swtch = <undef>; start = ^Q; stop = ^S; susp = ^Z; rprnt = ^R;
+werase = ^W; lnext = ^V; discard = ^O; min = 1; time = 0;
+-parenb -parodd -cmspar cs8 hupcl -cstopb cread clocal -crtscts
+-ignbrk -brkint -ignpar -parmrk -inpck -istrip -inlcr -igncr icrnl ixon -ixoff
+-iuclc -ixany -imaxbel -iutf8
+opost -olcuc -ocrnl onlcr -onocr -onlret -ofill -ofdel nl0 cr0 tab0 bs0 vt0 ff0
+isig icanon iexten echo echoe echok -echonl -noflsh -xcase -tostop -echoprt
+echoctl echoke -flusho -extproc
+
+ ACM0... (/dev/ttyACM0, USB ACM device: fit_StatUSB)
+speed 115200 baud; rows 0; columns 0; line = 0;
+intr = ^C; quit = ^\; erase = ^?; kill = ^U; eof = ^D; eol = <undef>;
+eol2 = <undef>; swtch = <undef>; start = ^Q; stop = ^S; susp = ^Z; rprnt = ^R;
+werase = ^W; lnext = ^V; discard = ^O; min = 1; time = 0;
+-parenb -parodd -cmspar cs8 hupcl -cstopb cread clocal -crtscts
+-ignbrk -brkint -ignpar -parmrk -inpck -istrip -inlcr -igncr -icrnl -ixon -ixoff
+-iuclc -ixany -imaxbel -iutf8
+-opost -olcuc -ocrnl onlcr -onocr -onlret -ofill -ofdel nl0 cr0 tab0 bs0 vt0 ff0
+-isig -icanon iexten -echo -echoe -echok -echonl -noflsh -xcase -tostop -echoprt
+-echoctl -echoke -flusho -extproc
+
+===============================================================================
+ BLUETOOTH CONTROLLERS
+
+Default BT Controller...
+Controller BC:14:EF:65:CD:B2 (public)
+	Name: pi-dev
+	Alias: pi-dev
+	Class: 0x00480000
+	Powered: yes
+	Discoverable: no
+	Pairable: yes
+	UUID: Headset AG                (00001112-0000-1000-8000-00805f9b34fb)
+	UUID: Generic Attribute Profile (00001801-0000-1000-8000-00805f9b34fb)
+	UUID: A/V Remote Control        (0000110e-0000-1000-8000-00805f9b34fb)
+	UUID: Generic Access Profile    (00001800-0000-1000-8000-00805f9b34fb)
+	UUID: PnP Information           (00001200-0000-1000-8000-00805f9b34fb)
+	UUID: A/V Remote Control Target (0000110c-0000-1000-8000-00805f9b34fb)
+	UUID: Audio Source              (0000110a-0000-1000-8000-00805f9b34fb)
+	UUID: Handsfree Audio Gateway   (0000111f-0000-1000-8000-00805f9b34fb)
+	Modalias: usb:v1D6Bp0246d0532
+	Discovering: no
+
+===============================================================================
+ BLUETOOTH DEVICES (paired w/ default controller)
+
+Device FC:58:FA:38:9E:F5 (public)
+	Name: Seneca
+	Alias: Seneca
+	Class: 0x00260404
+	Icon: audio-card
+	Paired: yes
+	Trusted: yes
+	Blocked: no
+	Connected: no
+	LegacyPairing: no
+	UUID: Headset                   (00001108-0000-1000-8000-00805f9b34fb)
+	UUID: Audio Sink                (0000110b-0000-1000-8000-00805f9b34fb)
+	UUID: A/V Remote Control Target (0000110c-0000-1000-8000-00805f9b34fb)
+	UUID: Advanced Audio Distribu.. (0000110d-0000-1000-8000-00805f9b34fb)
+	UUID: A/V Remote Control        (0000110e-0000-1000-8000-00805f9b34fb)
+	UUID: Handsfree                 (0000111e-0000-1000-8000-00805f9b34fb)
+
+===============================================================================
+ MEMORY AND SWAP
+
+              total        used        free      shared  buff/cache   available
+Mem:          684Mi       341Mi        71Mi        14Mi       271Mi       264Mi
+Swap:         1.7Gi        80Mi       1.6Gi
+
+Filename				Type		Size	Used	Priority
+/var/swap                              	file    	1048572	0	-2
+/dev/zram0                             	partition	175156	20832	5
+/dev/zram1                             	partition	175156	20520	5
+/dev/zram2                             	partition	175156	20256	5
+/dev/zram3                             	partition	175156	20568	5
+
+===============================================================================
+ IPC STATUS
+
+RESOURCE DESCRIPTION                                    LIMIT USED  USE%
+MSGMNI   Number of message queues                       32000    0 0.00%
+MSGMAX   Max size of message (bytes)                     8192    -     -
+MSGMNB   Default max size of queue (bytes)              16384    -     -
+SHMMNI   Shared memory segments                          4096    4 0.10%
+SHMALL   Shared memory pages                       4278190079  320 0.00%
+SHMMAX   Max size of shared memory segment (bytes) 4278190079    -     -
+SHMMIN   Min size of shared memory segment (bytes)          1    -     -
+SEMMNI   Number of semaphore identifiers                32000    0 0.00%
+SEMMNS   Total number of semaphores                1024000000    0 0.00%
+SEMMSL   Max semaphores per semaphore set.              32000    -     -
+SEMOPM   Max number of operations per semop(2)            500    -     -
+SEMVMX   Semaphore max value                            32767    -     -
+
+===============================================================================
+ SYSTEMCTL UNIT FAILURES
+
+0 loaded units listed.
+
+===============================================================================
+ PERSISTENT JOURNALING
+
+Peristent Journaling is configured...
+drwxr-sr-x+ 3 root systemd-journal 4096 Mar 25 20:06 /var/log/journal
+
+===============================================================================
+ SYSTEMCTL LIST-UNIT-FILES
+
+UNIT FILE                              STATE          
+proc-sys-fs-binfmt_misc.automount      static         
+-.mount                                generated      
+boot.mount                             generated      
+dev-hugepages.mount                    static         
+dev-mqueue.mount                       static         
+proc-fs-nfsd.mount                     static         
+proc-sys-fs-binfmt_misc.mount          static         
+run-rpc_pipefs.mount                   static         
+sys-fs-fuse-connections.mount          static         
+sys-kernel-config.mount                static         
+sys-kernel-debug.mount                 static         
+cups.path                              enabled        
+systemd-ask-password-console.path      static         
+systemd-ask-password-plymouth.path     static         
+systemd-ask-password-wall.path         static         
+session-c1.scope                       transient      
+session-c2.scope                       transient      
+session-c3.scope                       transient      
+alsa-restore.service                   static         
+alsa-state.service                     static         
+alsa-utils.service                     masked         
+apache-htcacheclean.service            disabled       
+apache-htcacheclean@.service           disabled       
+apache2.service                        enabled        
+apache2@.service                       disabled       
+apparmor.service                       enabled        
+apply_noobs_os_config.service          disabled       
+apt-daily-upgrade.service              static         
+apt-daily.service                      static         
+auth-rpcgss-module.service             static         
+autologin@.service                     disabled       
+autovt@.service                        enabled        
+avahi-daemon.service                   enabled        
+bind9-pkcs11.service                   disabled       
+bind9-resolvconf.service               enabled        
+bind9.service                          enabled        
+binfmt-support.service                 enabled        
+bluealsa.service                       static         
+bluetooth.service                      enabled        
+bootlogd.service                       masked         
+bootlogs.service                       masked         
+bootmisc.service                       masked         
+bthelper@.service                      static         
+checkfs.service                        masked         
+checkroot-bootclean.service            masked         
+checkroot.service                      masked         
+clean-mount-point@.service             static         
+colord.service                         static         
+configure-printer@.service             static         
+console-getty.service                  disabled       
+console-setup.service                  enabled        
+container-getty@.service               static         
+cron.service                           enabled        
+cryptdisks-early.service               masked         
+cryptdisks.service                     masked         
+cups-browsed.service                   enabled        
+cups.service                           enabled        
+dbus-fi.w1.wpa_supplicant1.service     enabled        
+dbus-org.bluez.service                 enabled        
+dbus-org.freedesktop.Avahi.service     enabled        
+dbus-org.freedesktop.hostname1.service static         
+dbus-org.freedesktop.locale1.service   static         
+dbus-org.freedesktop.login1.service    static         
+dbus-org.freedesktop.timedate1.service static         
+dbus-org.freedesktop.timesync1.service enabled        
+dbus.service                           static         
+debug-shell.service                    disabled       
+dhcpcd.service                         enabled        
+dhcpcd5.service                        enabled        
+display-manager.service                indirect       
+dphys-swapfile.service                 enabled        
+emergency.service                      static         
+fake-hwclock.service                   enabled        
+fstrim.service                         static         
+getty-static.service                   static         
+getty@.service                         enabled        
+glances.service                        enabled        
+gldriver-test.service                  enabled        
+halt.service                           masked         
+hciuart.service                        disabled       
+hddtemp.service                        generated      
+hostname.service                       masked         
+hwclock.service                        masked         
+ifup@.service                          static         
+ifupdown-pre.service                   static         
+ifupdown-wait-online.service           disabled       
+initrd-cleanup.service                 static         
+initrd-parse-etc.service               static         
+initrd-switch-root.service             static         
+initrd-udevadm-cleanup-db.service      static         
+irexec.service                         disabled       
+keyboard-setup.service                 enabled        
+killprocs.service                      masked         
+kmod-static-nodes.service              static         
+kmod.service                           static         
+lightdm.service                        indirect       
+lircd-setup.service                    disabled       
+lircd-uinput.service                   disabled       
+lircd.service                          enabled        
+lircmd.service                         disabled       
+lm-sensors.service                     enabled        
+logrotate.service                      static         
+man-db.service                         static         
+mariadb.service                        enabled        
+mariadb@.service                       disabled       
+module-init-tools.service              static         
+motd.service                           masked         
+mountall-bootclean.service             masked         
+mountall.service                       masked         
+mountdevsubfs.service                  masked         
+mountkernfs.service                    masked         
+mountnfs-bootclean.service             masked         
+mountnfs.service                       masked         
+mysql.service                          enabled        
+mysqld.service                         enabled        
+networking.service                     enabled        
+nfs-common.service                     masked         
+nfs-config.service                     static         
+nfs-idmapd.service                     static         
+nfs-utils.service                      static         
+nginx.service                          disabled       
+nmbd.service                           enabled        
+nodered.service                        disabled       
+packagekit-offline-update.service      static         
+packagekit.service                     static         
+paxctld.service                        disabled       
+phpsessionclean.service                static         
+pigpiod.service                        disabled       
+PIN18.service                          disabled       
+PIN22.service                          enabled        
+PIN29.service                          enabled        
+PIN31.service                          enabled        
+PIN35.service                          enabled        
+plymouth-halt.service                  static         
+plymouth-kexec.service                 static         
+plymouth-log.service                   static         
+plymouth-poweroff.service              static         
+plymouth-quit-wait.service             static         
+plymouth-quit.service                  static         
+plymouth-read-write.service            static         
+plymouth-reboot.service                static         
+plymouth-start.service                 static         
+plymouth-switch-root.service           static         
+plymouth.service                       static         
+polkit.service                         static         
+portmap.service                        disabled       
+postfix.service                        enabled        
+postfix@.service                       indirect       
+postgresql.service                     enabled        
+postgresql@.service                    indirect       
+powerboard_daemon.service              disabled       
+procps.service                         static         
+quotaon.service                        static         
+raspberrypi-net-mods.service           enabled        
+raspi-config.service                   generated      
+rc-local.service                       enabled-runtime
+rc.local.service                       enabled-runtime
+rc.service                             masked         
+rcS.service                            masked         
+reboot.service                         masked         
+redis-server.service                   masked         
+redis.service                          masked         
+regenerate_ssh_host_keys.service       disabled       
+rescue.service                         static         
+rmnologin.service                      masked         
+rng-tools.service                      generated      
+rpc-gssd.service                       static         
+rpc-statd-notify.service               disabled       
+rpc-statd.service                      disabled       
+rpc-svcgssd.service                    static         
+rpcbind.service                        disabled       
+rpi-display-backlight.service          enabled        
+rpi-eeprom-update.service              enabled        
+rsync.service                          enabled        
+rsyslog.service                        enabled        
+samba-ad-dc.service                    masked         
+saned.service                          masked         
+saned@.service                         indirect       
+screen-cleanup.service                 masked         
+sendsigs.service                       masked         
+serial-getty@.service                  disabled       
+shellinabox.service                    generated      
+single.service                         masked         
+smbd.service                           enabled        
+ssh.service                            enabled        
+ssh@.service                           static         
+sshd.service                           enabled        
+sshswitch.service                      enabled        
+stop-bootlogd-single.service           masked         
+stop-bootlogd.service                  masked         
+sudo.service                           masked         
+syslog.service                         enabled        
+sysstat.service                        enabled        
+system-update-cleanup.service          static         
+systemd-ask-password-console.service   static         
+systemd-ask-password-plymouth.service  static         
+systemd-ask-password-wall.service      static         
+systemd-backlight@.service             static         
+systemd-binfmt.service                 static         
+systemd-bless-boot.service             static         
+systemd-boot-check-no-failures.service disabled       
+systemd-exit.service                   static         
+systemd-fsck-root.service              enabled-runtime
+systemd-fsck@.service                  static         
+systemd-fsckd.service                  static         
+systemd-halt.service                   static         
+systemd-hibernate-resume@.service      static         
+systemd-hibernate.service              static         
+systemd-hostnamed.service              static         
+systemd-hwdb-update.service            static         
+systemd-hybrid-sleep.service           static         
+systemd-initctl.service                static         
+systemd-journal-flush.service          static         
+systemd-journald.service               static         
+systemd-kexec.service                  static         
+systemd-localed.service                static         
+systemd-logind.service                 static         
+systemd-machine-id-commit.service      static         
+systemd-modules-load.service           static         
+systemd-networkd-wait-online.service   disabled       
+systemd-networkd.service               disabled       
+systemd-poweroff.service               static         
+systemd-quotacheck.service             static         
+systemd-random-seed.service            static         
+systemd-reboot.service                 static         
+systemd-remount-fs.service             static         
+systemd-resolved.service               disabled       
+systemd-rfkill.service                 static         
+systemd-suspend-then-hibernate.service static         
+systemd-suspend.service                static         
+systemd-sysctl.service                 static         
+systemd-sysusers.service               static         
+systemd-time-wait-sync.service         disabled       
+systemd-timedated.service              static         
+systemd-timesyncd.service              enabled        
+systemd-tmpfiles-clean.service         static         
+systemd-tmpfiles-setup-dev.service     static         
+systemd-tmpfiles-setup.service         static         
+systemd-udev-settle.service            static         
+systemd-udev-trigger.service           static         
+systemd-udevd.service                  static         
+systemd-update-utmp-runlevel.service   static         
+systemd-update-utmp.service            static         
+systemd-user-sessions.service          static         
+systemd-volatile-root.service          static         
+triggerhappy.service                   enabled        
+tvheadend.service                      generated      
+udev.service                           static         
+udisks2.service                        enabled        
+ufw.service                            enabled        
+umountfs.service                       masked         
+umountnfs.service                      masked         
+umountroot.service                     masked         
+urandom.service                        static         
+usb_modeswitch@.service                static         
+user-runtime-dir@.service              static         
+user@.service                          static         
+usermin.service                        generated      
+vncserver-virtuald.service             disabled       
+vncserver-x11-serviced.service         enabled        
+webmin.service                         generated      
+winbind.service                        disabled       
+wpa_supplicant-nl80211@.service        disabled       
+wpa_supplicant-wired@.service          disabled       
+wpa_supplicant.service                 enabled        
+wpa_supplicant@.service                disabled       
+x11-common.service                     masked         
+zram-setup@.service                    static         
+machine.slice                          static         
+user.slice                             static         
+avahi-daemon.socket                    enabled        
+cups.socket                            enabled        
+dbus.socket                            static         
+lircd.socket                           enabled        
+rpcbind.socket                         disabled       
+saned.socket                           disabled       
+ssh.socket                             disabled       
+syslog.socket                          static         
+systemd-fsckd.socket                   static         
+systemd-initctl.socket                 static         
+systemd-journald-audit.socket          static         
+systemd-journald-dev-log.socket        static         
+systemd-journald.socket                static         
+systemd-networkd.socket                disabled       
+systemd-rfkill.socket                  static         
+systemd-udevd-control.socket           static         
+systemd-udevd-kernel.socket            static         
+triggerhappy.socket                    enabled        
+basic.target                           static         
+bluetooth.target                       static         
+boot-complete.target                   static         
+cryptsetup-pre.target                  static         
+cryptsetup.target                      static         
+ctrl-alt-del.target                    disabled       
+default.target                         indirect       
+emergency.target                       static         
+exit.target                            disabled       
+final.target                           static         
+getty-pre.target                       static         
+getty.target                           static         
+graphical.target                       indirect       
+halt.target                            disabled       
+hibernate.target                       static         
+hybrid-sleep.target                    static         
+initrd-fs.target                       static         
+initrd-root-device.target              static         
+initrd-root-fs.target                  static         
+initrd-switch-root.target              static         
+initrd.target                          static         
+kexec.target                           disabled       
+local-fs-pre.target                    static         
+local-fs.target                        static         
+multi-user.target                      static         
+network-online.target                  static         
+network-pre.target                     static         
+network.target                         static         
+nfs-client.target                      enabled        
+nss-lookup.target                      static         
+nss-user-lookup.target                 static         
+paths.target                           static         
+poweroff.target                        disabled       
+printer.target                         static         
+reboot.target                          disabled       
+remote-cryptsetup.target               disabled       
+remote-fs-pre.target                   static         
+remote-fs.target                       enabled        
+rescue-ssh.target                      static         
+rescue.target                          static         
+rpcbind.target                         static         
+runlevel0.target                       disabled       
+runlevel1.target                       static         
+runlevel2.target                       static         
+runlevel3.target                       static         
+runlevel4.target                       static         
+runlevel5.target                       indirect       
+runlevel6.target                       disabled       
+shutdown.target                        static         
+sigpwr.target                          static         
+sleep.target                           static         
+slices.target                          static         
+smartcard.target                       static         
+sockets.target                         static         
+sound.target                           static         
+suspend-then-hibernate.target          static         
+suspend.target                         static         
+swap.target                            static         
+sysinit.target                         static         
+system-update-pre.target               static         
+system-update.target                   static         
+time-sync.target                       static         
+timers.target                          static         
+umount.target                          static         
+apt-daily-upgrade.timer                enabled        
+apt-daily.timer                        enabled        
+fstrim.timer                           disabled       
+logrotate.timer                        enabled        
+man-db.timer                           enabled        
+phpsessionclean.timer                  enabled        
+systemd-tmpfiles-clean.timer           static         
+
+359 unit files listed.
+
+===============================================================================
+ PRINTER STATUS (CUPS)
+
+scheduler is running
+system default destination: PDF
+device for PDF: cups-pdf:/
+PDF accepting requests since Thu Mar 26 03:20:10 2020
+printer PDF is idle.  enabled since Thu Mar 26 03:20:10 2020
+
+===============================================================================
+ HDMI DISPLAY DATA
+
+1 attached device(s), display ID's are : 
+Display Number 2, type HDMI 0
+
+DISPLAY NUMBER : 2
+DISPLAY STATUS : state 0xa [HDMI DMT (82) RGB full 16:9], 1920x1080 @ 60.00Hz, progressive
+EDID DEVICE ID : No Device Present
+SUPPORTED AUDIO: No Device Present
+
+Group DMT has 2 modes:
+           mode 4: 640x480 @ 60Hz 4:3, clock:25MHz progressive 
+  (prefer) mode 82: 1920x1080 @ 60Hz 16:9, clock:148MHz progressive 
+
+CURRENT SCREEN RESOLUTION
+HORIZONTAL : 1920 pixels
+VERTICAL   : 1080 pixels
+COLOR DEPTH: 24 bits
+
+===============================================================================
+ GPIO PIN STATUS
+
+ +-----+-----+---------+------+---+---Pi 3B--+---+------+---------+-----+-----+
+ | BCM | wPi |   Name  | Mode | V | Physical | V | Mode | Name    | wPi | BCM |
+ +-----+-----+---------+------+---+----++----+---+------+---------+-----+-----+
+ |     |     |    3.3v |      |   |  1 || 2  |   |      | 5v      |     |     |
+ |   2 |   8 |   SDA.1 | ALT0 | 1 |  3 || 4  |   |      | 5v      |     |     |
+ |   3 |   9 |   SCL.1 | ALT0 | 1 |  5 || 6  |   |      | 0v      |     |     |
+ |   4 |   7 | GPIO. 7 |   IN | 1 |  7 || 8  | 0 | IN   | TxD     | 15  | 14  |
+ |     |     |      0v |      |   |  9 || 10 | 1 | IN   | RxD     | 16  | 15  |
+ |  17 |   0 | GPIO. 0 |   IN | 0 | 11 || 12 | 0 | IN   | GPIO. 1 | 1   | 18  |
+ |  27 |   2 | GPIO. 2 |   IN | 0 | 13 || 14 |   |      | 0v      |     |     |
+ |  22 |   3 | GPIO. 3 |   IN | 0 | 15 || 16 | 0 | IN   | GPIO. 4 | 4   | 23  |
+ |     |     |    3.3v |      |   | 17 || 18 | 0 | IN   | GPIO. 5 | 5   | 24  |
+ |  10 |  12 |    MOSI |   IN | 0 | 19 || 20 |   |      | 0v      |     |     |
+ |   9 |  13 |    MISO |   IN | 0 | 21 || 22 | 1 | IN   | GPIO. 6 | 6   | 25  |
+ |  11 |  14 |    SCLK |   IN | 0 | 23 || 24 | 1 | IN   | CE0     | 10  | 8   |
+ |     |     |      0v |      |   | 25 || 26 | 1 | IN   | CE1     | 11  | 7   |
+ |   0 |  30 |   SDA.0 |   IN | 1 | 27 || 28 | 1 | IN   | SCL.0   | 31  | 1   |
+ |   5 |  21 | GPIO.21 |   IN | 1 | 29 || 30 |   |      | 0v      |     |     |
+ |   6 |  22 | GPIO.22 |   IN | 1 | 31 || 32 | 0 | OUT  | GPIO.26 | 26  | 12  |
+ |  13 |  23 | GPIO.23 |   IN | 0 | 33 || 34 |   |      | 0v      |     |     |
+ |  19 |  24 | GPIO.24 |   IN | 1 | 35 || 36 | 0 | OUT  | GPIO.27 | 27  | 16  |
+ |  26 |  25 | GPIO.25 |  OUT | 0 | 37 || 38 | 0 | OUT  | GPIO.28 | 28  | 20  |
+ |     |     |      0v |      |   | 39 || 40 | 0 | IN   | GPIO.29 | 29  | 21  |
+ +-----+-----+---------+------+---+----++----+---+------+---------+-----+-----+
+ | BCM | wPi |   Name  | Mode | V | Physical | V | Mode | Name    | wPi | BCM |
+ +-----+-----+---------+------+---+---Pi 3B--+---+------+---------+-----+-----+
+
+===============================================================================
+ RESOLV.CONF
+
+domain cormack.lan
+nameserver 192.168.43.1
+nameserver 127.0.0.1
+
+===============================================================================
+ HOSTS FILE
+
+127.0.0.1       localhost localhost.com
+::1             localhost ip6-localhost ip6-loopback
+ff02::1         ip6-allnodes
+ff02::2         ip6-allrouters
+127.0.1.1       pi-dev
+192.168.0.1     router
+192.168.0.100   phone
+192.168.0.101   laptop
+192.168.0.102   pi-media
+192.168.0.103   pi-dev
+192.168.0.104   usb-wifi
+
+===============================================================================
+ NETWORKS FILE
+
+default         0.0.0.0
+loopback        127.0.0.0
+link-local      169.254.0.0
+local-wifi      192.168.0.0
+phone-wifi      192.168.43.0
+
+===============================================================================
+ IPV4 FIREWALL RULES
+
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+COMMIT
+*mangle
+COMMIT
+*nat
+COMMIT
+
+===============================================================================
+ IPV6 FIREWALL RULES
+
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+COMMIT
+*mangle
+COMMIT
+*nat
+COMMIT
+
+===============================================================================
+ ROUTE TABLE - IPV4
+
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         192.168.43.1    0.0.0.0         UG    303    0        0 wlan0
+phone-wifi      0.0.0.0         255.255.255.0   U     303    0        0 wlan0
+
+===============================================================================
+ ROUTE TABLE - IPV6
+
+Kernel IPv6 routing table
+Destination                    Next Hop                   Flag Met Ref Use If
+localhost/128                  [::]                       U    256 2     0 lo
+2600:1009:b04e:a402::/64       [::]                       U    303 3     0 wlan0
+fe80::/64                      [::]                       U    256 1     0 wlan0
+[::]/0                         fe80::d204:1ff:fe6a:77a    UG   303 5     0 wlan0
+localhost/128                  [::]                       Un   0   7     0 lo
+2600:1009:b04e:a402:4f1b:6b86:535c:7b9b/128 [::]                       Un   0   6     0 wlan0
+fe80::6ba9:d575:9078:d326/128  [::]                       Un   0   4     0 wlan0
+ff00::/8                       [::]                       U    256 6     0 wlan0
+[::]/0                         [::]                       !n   -1  1     0 lo
+
+===============================================================================
+ NETWORK ADAPTORS
+
+  *-usb:0 DISABLED
+       description: Ethernet interface
+       product: SMSC9512/9514 Fast Ethernet Adapter
+       vendor: Standard Microsystems Corp.
+       physical id: 1
+       bus info: usb@1:1.1
+       logical name: eth0
+       version: 2.00
+       serial: b8:27:eb:fe:1a:77
+       size: 10Mbit/s
+       capacity: 100Mbit/s
+       capabilities: usb-2.00 ethernet physical tp mii 10bt 10bt-fd 100bt 100bt-fd autonegotiation
+       configuration: autonegotiation=on broadcast=yes driver=smsc95xx driverversion=22-Aug-2005 duplex=half firmware=smsc95xx USB 2.0 Ethernet link=no maxpower=2mA multicast=yes port=MII speed=10Mbit/s
+  *-network
+       description: Wireless interface
+       physical id: 2
+       logical name: wlan0
+       serial: b8:27:eb:ab:4f:22
+       capabilities: ethernet physical wireless
+       configuration: broadcast=yes driver=brcmfmac driverversion=7.45.98.94 firmware=01-3b33decd ip=192.168.43.4 multicast=yes wireless=IEEE 802.11
+
+===============================================================================
+ IFCONFIG
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 525908  bytes 31738953 (30.2 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 525908  bytes 31738953 (30.2 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.43.4  netmask 255.255.255.0  broadcast 192.168.43.255
+        inet6 fe80::6ba9:d575:9078:d326  prefixlen 64  scopeid 0x20<link>
+        inet6 2600:1009:b04e:a402:4f1b:6b86:535c:7b9b  prefixlen 64  scopeid 0x0<global>
+        ether b8:27:eb:ab:4f:22  txqueuelen 1000  (Ethernet)
+        RX packets 3953  bytes 289317 (282.5 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 6354  bytes 6600592 (6.2 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+===============================================================================
+ IP NEIGHBORS (ARP CACHE)
+
+192.168.43.5 dev wlan0 lladdr b8:27:eb:a3:4e:61 STALE
+192.168.43.3 dev wlan0 lladdr 00:c2:c6:3e:6b:6a REACHABLE
+192.168.43.1 dev wlan0 lladdr d0:04:01:6a:07:7a DELAY
+2600:1009:b04e:a402:8d07:b3ed:29d6:3f8b dev wlan0 lladdr 00:c2:c6:3e:6b:6a REACHABLE
+fe80::d204:1ff:fe6a:77a dev wlan0 lladdr d0:04:01:6a:07:7a router REACHABLE
+
+===============================================================================
+ WPA_SUPPLICANT FILE (Passwords will not be displayed)
+
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=US
+network={
+	ssid="TP-Link_CA84"
+	psk=PASSWORD_NOT_SHOWN
+	key_mgmt=WPA-PSK
+}
+network={
+	ssid="Verizon Moto E (4) Plus 5621"
+	psk=PASSWORD_NOT_SHOWN
+	key_mgmt=WPA-PSK
+}
+network={
+	ssid="GL-MT300N-V2-b0d"
+	psk=PASSWORD_NOT_SHOWN
+	key_mgmt=WPA-PSK
+}
+
+===============================================================================
+ IWCONFIG
+
+wlan0     IEEE 802.11  ESSID:"Verizon Moto E (4) Plus 5621"  
+          Mode:Managed  Frequency:2.417 GHz  Access Point: D0:04:01:6A:07:7A   
+          Bit Rate=72.2 Mb/s   Tx-Power=31 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:off
+          Link Quality=70/70  Signal level=-35 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:13  Invalid misc:0   Missed beacon:0
+
+===============================================================================
+ VISIBLE WIFI ACCESS POINTS
+
+wlan0     Scan completed :
+          Cell 01 - Address: D0:04:01:6A:07:7A
+                    Channel:2
+                    Frequency:2.417 GHz (Channel 2)
+                    Quality=70/70  Signal level=-29 dBm  
+                    Encryption key:on
+                    ESSID:"Verizon Moto E (4) Plus 5621"
+                    Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s
+                    Bit Rates:6 Mb/s; 9 Mb/s; 12 Mb/s; 18 Mb/s; 24 Mb/s
+                              36 Mb/s; 48 Mb/s; 54 Mb/s
+                    Mode:Master
+                    Extra:tsf=0000000000000000
+                    Extra: Last beacon: 14580ms ago
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+          Cell 02 - Address: C8:52:61:97:F9:F0
+                    Channel:1
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=33/70  Signal level=-77 dBm  
+                    Encryption key:on
+                    ESSID:"ATTH2uXz7i"
+                    Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s; 18 Mb/s
+                              24 Mb/s; 36 Mb/s; 54 Mb/s
+                    Bit Rates:6 Mb/s; 9 Mb/s; 12 Mb/s; 48 Mb/s
+                    Mode:Master
+                    Extra:tsf=0000000000000000
+                    Extra: Last beacon: 14580ms ago
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+          Cell 03 - Address: C8:63:FC:BE:B3:74
+                    Channel:6
+                    Frequency:2.437 GHz (Channel 6)
+                    Quality=36/70  Signal level=-74 dBm  
+                    Encryption key:on
+                    ESSID:"MySpectrumWiFi73-2G"
+                    Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s; 6 Mb/s
+                              9 Mb/s; 12 Mb/s; 18 Mb/s
+                    Bit Rates:24 Mb/s; 36 Mb/s; 48 Mb/s; 54 Mb/s
+                    Mode:Master
+                    Extra:tsf=0000000000000000
+                    Extra: Last beacon: 14580ms ago
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+
+===============================================================================
+ SCANNING FOR SERVICES LISTENING ON IPV4: 127.0.0.1
+
+PORT      STATE SERVICE     VERSION
+22/tcp    open  ssh         OpenSSH 7.9p1 Raspbian 10+deb10u2 (protocol 2.0)
+25/tcp    open  smtp        Postfix smtpd
+53/tcp    open  domain      ISC BIND 9.11.5-P4-5.1 (Raspbian Linux)
+80/tcp    open  http        Apache httpd 2.4.38 ((Raspbian))
+139/tcp   open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp   open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+631/tcp   open  ipp         CUPS 2.2
+953/tcp   open  rndc?
+3306/tcp  open  mysql       MySQL 5.5.5-10.3.22-MariaDB-0+deb10u1
+4200/tcp  open  ssl/http    ShellInABox
+5432/tcp  open  postgresql  PostgreSQL DB 9.6.0 or later
+5900/tcp  open  vnc         RealVNC Enterprise 5.3 or later (protocol 5.0)
+9981/tcp  open  pumpkindb?
+9982/tcp  open  unknown
+10000/tcp open  http        MiniServ 1.941 (Webmin httpd)
+20000/tcp open  http        MiniServ 1.791 (Webmin httpd)
+61208/tcp open  http        WSGIServer 0.2 (Python 3.7.3)
+61209/tcp open  http        BaseHTTPServer 0.6 (Python 3.7.3)
+
+===============================================================================
+ SCANNING FOR SERVICES LISTENING ON IPV4: 192.168.43.4
+
+PORT      STATE SERVICE     VERSION
+22/tcp    open  ssh         OpenSSH 7.9p1 Raspbian 10+deb10u2 (protocol 2.0)
+53/tcp    open  domain      ISC BIND 9.11.5-P4-5.1 (Raspbian Linux)
+80/tcp    open  http        Apache httpd 2.4.38 ((Raspbian))
+139/tcp   open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp   open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+631/tcp   open  ipp         CUPS 2.2
+4200/tcp  open  ssl/http    ShellInABox
+5900/tcp  open  vnc         RealVNC Enterprise 5.3 or later (protocol 5.0)
+9981/tcp  open  pumpkindb?
+9982/tcp  open  unknown
+10000/tcp open  http        MiniServ 1.941 (Webmin httpd)
+20000/tcp open  http        MiniServ 1.791 (Webmin httpd)
+61208/tcp open  http        WSGIServer 0.2 (Python 3.7.3)
+61209/tcp open  http        BaseHTTPServer 0.6 (Python 3.7.3)
+
+===============================================================================
+ SCANNING FOR SERVICES LISTENING ON IPV6: ::1
+
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 7.9p1 Raspbian 10+deb10u2 (protocol 2.0)
+53/tcp   open  domain      ISC BIND 9.11.5-P4-5.1 (Raspbian Linux)
+80/tcp   open  http        Apache httpd 2.4.38 ((Raspbian))
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+631/tcp  open  ipp         CUPS 2.2
+5432/tcp open  postgresql  PostgreSQL DB 9.6.0 or later
+5900/tcp open  vnc         RealVNC Enterprise 5.3 or later (protocol 5.0)
+
+===============================================================================
+ SCANNING FOR SERVICES LISTENING ON IPV6: 2600:1009:b04e:a402:4f1b:6b86:535c:7b9b
+
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 7.9p1 Raspbian 10+deb10u2 (protocol 2.0)
+53/tcp   open  domain      ISC BIND 9.11.5-P4-5.1 (Raspbian Linux)
+80/tcp   open  http        Apache httpd 2.4.38 ((Raspbian))
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+631/tcp  open  ipp         CUPS 2.2
+5900/tcp open  vnc         RealVNC Enterprise 5.3 or later (protocol 5.0)
+
+===============================================================================
+ * * * END OF REPORT * * *
+
+ 
