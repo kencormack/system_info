@@ -25,9 +25,6 @@ The following packages are required, to do a full inspection:
   lshw, usbutils, util-linux, alsa-utils, bluez, wireless-tools, bc, dc,
   i2c-tools, and wiringpi
 
-The script will explicitly test that each of those packages is installed.
-If any are missing, the script will inform the user, and instruct to install.
-
 An allowance is made with regard to wiringpi.  As the repository package
 available at the time of this writing does not support the Pi 4, some
 people may choose instead to compile wiringpi from the source tar-ball
