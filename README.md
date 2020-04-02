@@ -72,3 +72,98 @@ Tested on the following hardware:
   Pi0WH (William's),
   Raspbian Buster,
   PiOled i2c display
+
+In it's present form, the script generates informatrion in the following sections...
+
+TITLE PAGE
+KERNEL RING BUFFER CHECK
+SYSTEM IDENTIFICATION
+MODEL AND FIRMWARE VERSION
+CPU INFORMATION
+DECODED SYSTEM REVISION NUMBER
+---------------------------
+PI MODEL 4 EEPROM VERSION    <--- Pi 4 only
+PI MODEL 4 EEPROM CONFIG     <--- Pi 4 only
+OTP BOOT-FROM-USB STATUS     <--- Pi2B v1.2, 3A+, 3B, 3B+ only
+---------------------------
+OPERATING SYSTEM
+CMDLINE.TXT
+CONFIG.TXT SETTINGS
+MEMORY SPLIT
+ACTIVE DISPLAY DRIVER
+PROCESSOR SPEEDS
+CLOCK FREQUENCIES
+VOLTAGES
+TEMPERATURE
+SCALING GOVERNOR
+CODECS
+CAMERA
+I2CDETECT
+RTC (REALTIME CLOCK)
+---------------------------
+USB AND OTHER DEVICE INFO
+INPUT DEVICES
+GENERIC DEVICES
+---------------------------
+STORAGE DEVICES
+DISK CONFIGURATION
+FSTAB FILE
+---------------------------
+ALSA MODULES
+ALSA SOUND HARDWARE
+ALSA CARD-0 INFO
+ALSA PLAYBACK AND CAPTURE DEVICES
+---------------------------
+ACM COMMUNICATION DEVICES
+UARTS AND USB SERIAL PORTS
+---------------------------
+BLUETOOTH CONTROLLERS
+BLUETOOTH DEVICES
+---------------------------
+MEMORY AND SWAP
+MEMINFO
+IPC STATUS
+---------------------------
+SYSTEMD-ANALYZE CRITICAL CHAIN
+SYSTEMD-ANALYZE BLAME
+SYSTEMCTL STATUS
+SYSTEMCTL UNIT FAILURES
+PERSISTENT JOURNALING
+SYSTEMCTL LIST-UNIT-FILES
+---------------------------
+LOCALIZATION SETTINGS
+---------------------------
+PRINTER STATUS (CUPS)    <--- If cups-client is installed
+---------------------------
+OFFICIAL 7" TOUCHSCREEN
+HDMI DISPLAY DATA
+---------------------------
+GPIO PIN STATUS
+---------------------------
+IPV6 DISABLED    <-- Not shown if ipv6 is not disabled in cmdline.txt
+RESOLV.CONF
+HOSTS FILE
+NETWORKS FILE
+IPV4 FIREWALL RULES
+IPV6 FIREWALL RULES
+HOSTS.DENY
+HOSTS.ALLOW
+ROUTE TABLE - IPV4
+ROUTE TABLE - IPV6
+NETWORK ADAPTORS
+IFCONFIG
+IP NEIGHBORS (ARP CACHE)
+WPA_SUPPLICANT FILE
+IWCONFIG
+VISIBLE WIFI ACCESS POINTS
+---------------------------
+SCANNING FOR SERVICES    <--- If nmap is installed
+---------------------------
+PORTMAPPER - RPCINFO     <--- If rpcbind is installed
+EXPORTED NFS DIRS        <--- If nfs-common is installed
+MOUNTED NFS DIRS         <--- If dirs are mounted
+SMBSTATUS                <--- If samba is installed and smbd is running
+MOUNTED CIFS DIRS        <--- If any shares are mounted
+---------------------------
+LOADED MODULES
+INSTALLED PACKAGES LIST
