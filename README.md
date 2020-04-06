@@ -42,6 +42,7 @@ Sections of the output made possible by the supplemental packages will be
 marked with (***) in the heading of any sections involved.
 
 This script was tested on the following hardware:
+
   hostname: pi-media (Ken's)
   Pi 3B+ w/ Raspbian Stretch
   X150 9-port USB hub
