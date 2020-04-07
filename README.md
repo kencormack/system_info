@@ -43,6 +43,7 @@ marked with (***) in the heading of any sections involved, or in the part
 of an otherwise core test that has made use of the supplemental package.
 
 This script was tested on the following hardware:
+
   hostname: pi-media (Ken's)
   Pi 3B+ w/ Raspbian Stretch
   X150 9-port USB hub
