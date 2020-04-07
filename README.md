@@ -22,8 +22,8 @@ readability.
 call sudo only for those commands that need root privilege.
 
 The following packages are required, to do a full inspection:
-  alsa-utils, bc, bluez, dc, iproute2, lshw, usbutils, util-linux,
-  wireless-tools, and wiringpi
+  alsa-utils, bluez, coreutils, i2c-tools, iproute2, libraspberrypi-bin,
+  lshw, usbutils, util-linux, wireless-tools, wiringpi
 
 The script will explicitly test that each of those packages is installed.
 If any are missing, it will inform the user, and instruct them to install.
@@ -33,16 +33,16 @@ If you have a raspberry pi 4, install at least version 2.52 of wiringpi
 See - http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/
 
 The following supplemental packages may also be utilized:
-  cups-client, nmap, rpcbind, nfs-kernel-server, samba, sysstat,
-  and watchdog
+  cups-client, dc, nmap, rpcbind, nfs-kernel-server, samba, sysstat,
+  watchdog, and python3-gpiozero
 
 Those packages are not required, and the user will not be instructed
 to install them.  But they will be utilized if installed and configured.
 Sections of the output made possible by the supplemental packages will be
-marked with (***) in the heading of any sections involved.
+marked with (***) in the heading of any sections involved, or in the part
+of an otherwise core test that has made use of the supplemental package.
 
 This script was tested on the following hardware:
-
   hostname: pi-media (Ken's)
   Pi 3B+ w/ Raspbian Stretch
   X150 9-port USB hub
