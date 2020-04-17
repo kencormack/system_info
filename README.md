@@ -23,6 +23,8 @@ util-linux,
 v4l-utils,
 wireless-tools
 
+If the Pi being examined is a 4B, the package rpi-eeprom is also required.
+
 The script will explicitly test that each of those packages is installed. If any are missing, it will inform the user, and instruct them to install.
 
 The following supplemental packages may also be utilized:
