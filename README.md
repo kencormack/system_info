@@ -25,7 +25,7 @@ sudo only for those commands that need root privilege.
 - v4l-utils
 - wireless-tools
 ```
-If the Pi being examined is a 4B, the package `rpi-eeprom` is also required.
+If the Pi being examined is a 4B, the package 'rpi-eeprom' is also required.
 ```
 The script will explicitly test that each of those required packages is installed. If any are missing, the script will inform the user, and instruct them to install.
 
