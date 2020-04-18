@@ -3,7 +3,8 @@
 
 This script attempts to perform a fairly complete audit of the current configuration of a Raspberry Pi. The target hardware is any variant or model of Pi, up to and including the Pi 4B in all it's available memory configurations (1/2/4GB). Supported OS versions include Raspbian Stretch and Buster. No attempts will be made to back-port this to Jessie or older.
 ```
-The script is an "examination only" affair, making no attempts to add, delete, or change anything on the system.
+The script is an "examination only" affair, making no attempts to add, delete,
+or change anything on the system.
 ```
 The intended audience for this script is any Pi user who wants to see how aspects of their Pi are currently equipped and configured, for general troubleshooting, confirmation, or education/curiosity purposes. It does nothing that hasn't already been done by any/all of the tools it calls upon. I'm just consolidating everything into one place. Deliberate attempts were made to make things easy to follow, and the coding style is meant for easy readability.
 ```
