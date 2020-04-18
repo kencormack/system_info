@@ -7,7 +7,8 @@ The script is an "examination only" affair, making no attempts to add, delete, o
 ```
 The intended audience for this script is any Pi user who wants to see how aspects of their Pi are currently equipped and configured, for general troubleshooting, confirmation, or education/curiosity purposes. It does nothing that hasn't already been done by any/all of the tools it calls upon. I'm just consolidating everything into one place. Deliberate attempts were made to make things easy to follow, and the coding style is meant for easy readability.
 ```
-'sudo' access is required. The script can be run as the user, and will call sudo only for those commands that need root privilege.
+'sudo' access is required. The script can be run as the user, and will call sudo only for those commands that
+need root privilege.
 ```
 ## The following packages are required, to do a full inspection:
 
