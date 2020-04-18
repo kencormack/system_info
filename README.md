@@ -7,8 +7,8 @@ The script is an "examination only" affair, making no attempts to add, delete, o
 ```
 The intended audience for this script is any Pi user who wants to see how aspects of their Pi are currently equipped and configured, for general troubleshooting, confirmation, or education/curiosity purposes. It does nothing that hasn't already been done by any/all of the tools it calls upon. I'm just consolidating everything into one place. Deliberate attempts were made to make things easy to follow, and the coding style is meant for easy readability.
 ```
-'sudo' access is required. The script can be run as the user, and will call sudo only for those commands that
-need root privilege.
+'sudo' access is required. The script can be run as the user, and will call
+sudo only for those commands that need root privilege.
 ```
 ## The following packages are required, to do a full inspection:
 
@@ -43,7 +43,8 @@ The script will explicitly test that each of those required packages is installe
 - watchdog
 - wiringpi
 ```
-NOTE: If you have a raspberry pi 4, install at least version 2.52 of wiringpi See - http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/
+NOTE: If you have a raspberry pi 4, install at least version 2.52 of wiringpi
+See - http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/
 ```
 The supplemental packages are not required, and the user will not be instructed to install them. But they will be utilized if installed and configured. Sections of the output made possible by the supplemental packages will be marked with *** in the heading of any sections involved, or in the part of an otherwise core test that has made use of the supplemental package.
 
