@@ -42,11 +42,11 @@ The script will explicitly test that each of those required packages is installe
 - sysstat
 - watchdog
 - wiringpi
-
-Those packages are not required, and the user will not be instructed to install them. But they will be utilized if installed and configured. Sections of the output made possible by the supplemental packages will be marked with *** in the heading of any sections involved, or in the part of an otherwise core test that has made use of the supplemental package.
 ```
 NOTE: If you have a raspberry pi 4, install at least version 2.52 of wiringpi See - http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/
 ```
+The supplemental packages are not required, and the user will not be instructed to install them. But they will be utilized if installed and configured. Sections of the output made possible by the supplemental packages will be marked with *** in the heading of any sections involved, or in the part of an otherwise core test that has made use of the supplemental package.
+
 ## This script was tested on the following hardware:
 
 hostname: pi-media (Ken's)
