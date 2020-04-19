@@ -20,6 +20,7 @@ sudo only for those commands that need root privilege.
 - iproute2
 - libraspberrypi-bin
 - lshw
+- net-tools
 - usbutils
 - util-linux
 - v4l-utils
