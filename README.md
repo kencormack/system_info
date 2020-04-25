@@ -46,16 +46,16 @@ The script will explicitly test that each of those required packages is installe
 - watchdog
 - wiringpi
 
-NOTE: If you have a raspberry pi 4, install at version 2.52 of wiringpi, see:
+NOTE: If you have a raspberry pi 4B, install version 2.52 of wiringpi, see:
 [http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)
 
 The supplemental packages are not required, and the user will not be instructed to install them. But they will be utilized if installed and configured. Sections of the output made possible by the supplemental packages will be marked with *** in the heading of any sections involved, or in the part of an otherwise core test that has made use of the supplemental package.
 
 ## Limitations and Caveats
 - Not all inspections are possible on all systems, in all configurations.  For example, with the vc4-kms-v3d(-pi4) "Real" OpenGL display driver, "tvservice" cannot be used to query HDMI characteristics, nor can "vcgencmd get_lcd_info" determine current display resolution and color depth.
-- The Pi 4B brings new clocks, voltage and temperature sensors, codecs, boot methods, and other new features, along with new bugs.  In some cases, "the old ways" work to get the data being sought.  In others, new ways will have to be found (where possible) to present similar data.
-- There will undoubtedly be some who will run the 64-bit kernel on their 64-bit capable systems.  Minimal testing has been done in that environment, and I am certain it will present it's own suite of challenges and opportunities.
-- Aspects of this script that are 4B-specific have been the result of online research, and the feedback of a couple very helpful people.  If you have a 4B and would like to assist with the development of this script, any contributed code (or sample output showing "broken" data) would be gratefully considered.
+- The Pi 4B brings new clocks, voltage and temperature sensors, codecs, boot methods, and other new features, along with new bugs.  In some cases, "the old ways" work to get the data being sought.  In others, new ways will have to be found (where possible) to present similar data.  In some cases, there are no alternative methods yet available.
+- Some people will run the 64-bit kernel on their 64-bit capable systems.  Minimal testing has been done in that environment, and I am certain it will present it's own suite of challenges and opportunities.
+- Aspects of this script that are 4B-specific have been the result of online research, and the feedback of a couple very helpful people.  If you have a 4B and would like to assist with the development of this script, any ideas, contributed code, or even sample output showing "broken" routines to be fixed, would be gratefully considered.
 
 ## This script was tested on the following hardware:
 
