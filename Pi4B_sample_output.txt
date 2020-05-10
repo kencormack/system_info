@@ -1,0 +1,813 @@
+===============================================================================
+ RASPBERRY PI SYSTEM INFORMATION TOOL - v1.4.6
+
+Written By Ken Cormack, unixken@yahoo.com
+With contributions from William Stearns, william.l.stearns@gmail.com
+Latest version on github - https://github.com/kencormack/system_info
+
+Report Date and Time:
+Sun 10 May 2020 06:00:16 PM EDT
+
+===============================================================================
+ PRELIMINARY CHECKS
+
+OS version check:  OK
+dmesg ring buffer: OK
+running as user:   pi
+sudo is available: OK
+
+===============================================================================
+ DECODED SYSTEM REVISION NUMBER
+
+Revision      : b03111
+PCB Revision  : 1
+Model Name    : 4B
+Processor     : BCM2711
+Manufacturer  : Sony UK
+Memory Size   : 2048 MB
+Encoded Flag  : revision is a bit field
+Warranty Void : no
+
+This 4B contains a USB-C power design flaw.
+"Smart" USB-C cables will not power this Pi.
+
+===============================================================================
+ CHECKING SOFTWARE DEPENDENCIES
+
+Checking required software dependencies...
+  found: alsa-utils
+  found: bc
+  found: bluez
+  found: coreutils
+  found: i2c-tools
+  found: iproute2
+  found: libraspberrypi-bin
+  found: lshw
+  found: net-tools
+  found: rpi-eeprom
+  found: usbutils
+  found: util-linux
+  found: v4l-utils
+  found: wireless-tools
+14 out of 14 required packages are installed.
+All core inspections will be performed.
+
+Checking supplemental software dependencies...
+  found: cups-client
+  found: dc
+  found: ethtool
+  found: nfs-kernel-server
+  found: nmap
+  found: python3-gpiozero
+  found: rng-tools
+  found: rpcbind
+  found: rtl-sdr
+  found: samba
+  found: sysstat
+  found: watchdog
+  found: wiringpi
+  found: x11-xserver-utils
+14 out of 14 supplemental packages are installed.
+Some supplemental inspections will be performed.
+
+===============================================================================
+ SYSTEM IDENTIFICATION
+
+Hostname: pi-dev
+Serial #: 100000006f66d823
+
+===============================================================================
+ OPERATING SYSTEM
+
+Raspbian GNU/Linux 10 (buster)
+Linux pi-dev 4.19.97-v8+ #1294 SMP PREEMPT Thu Jan 30 13:27:08 GMT 2020 aarch64 GNU/Linux
+
+KERNEL IS: 64-BIT
+
+up 1 hour, 34 minutes
+
+===============================================================================
+ MAC-ADDRESS(ES)
+
+DC:A6:32:11:8D:2B
+DC:A6:32:11:8D:2C
+
+===============================================================================
+ MODEL AND FIRMWARE VERSION
+
+Raspberry Pi 4 Model B Rev 1.1
+
+Feb 12 2020 12:37:37 
+Copyright (c) 2012 Broadcom
+version c3c8dbdf147686fb0c3f32aece709d0653368810 (clean) (release) (start_x)
+
+===============================================================================
+ SYSTEM DIAGRAM (***)
+
+,--------------------------------.
+| oooooooooooooooooooo J8   +======
+| 1ooooooooooooooooooo  PoE |   Net
+|  Wi                    oo +======
+|  Fi  Pi Model 4B  V1.1 oo      |
+|        ,----.               +====
+| |D|    |SoC |               |USB3
+| |S|    |    |               +====
+| |I|    `----'                  |
+|                   |C|       +====
+|                   |S|       |USB2
+| pwr   |HD|   |HD| |I||A|    +====
+`-| |---|MI|---|MI|----|V|-------'
+
+Revision           : b03111
+SoC                : BCM2711
+RAM                : 2048Mb
+Storage            : MicroSD
+USB ports          : 4 (excluding power)
+Ethernet ports     : 1
+Wi-fi              : True
+Bluetooth          : True
+Camera ports (CSI) : 1
+Display ports (DSI): 1
+
+J8:
+   3V3  (1) (2)  5V    
+ GPIO2  (3) (4)  5V    
+ GPIO3  (5) (6)  GND   
+ GPIO4  (7) (8)  GPIO14
+   GND  (9) (10) GPIO15
+GPIO17 (11) (12) GPIO18
+GPIO27 (13) (14) GND   
+GPIO22 (15) (16) GPIO23
+   3V3 (17) (18) GPIO24
+GPIO10 (19) (20) GND   
+ GPIO9 (21) (22) GPIO25
+GPIO11 (23) (24) GPIO8 
+   GND (25) (26) GPIO7 
+ GPIO0 (27) (28) GPIO1 
+ GPIO5 (29) (30) GND   
+ GPIO6 (31) (32) GPIO12
+GPIO13 (33) (34) GND   
+GPIO19 (35) (36) GPIO16
+GPIO26 (37) (38) GPIO20
+   GND (39) (40) GPIO21
+
+For further information, please refer to https://pinout.xyz/
+
+===============================================================================
+ CPU INFORMATION
+
+Architecture:        aarch64
+Byte Order:          Little Endian
+CPU(s):              4
+On-line CPU(s) list: 0-3
+Thread(s) per core:  1
+Core(s) per socket:  4
+Socket(s):           1
+Vendor ID:           ARM
+Model:               3
+Model name:          Cortex-A72
+Stepping:            r0p3
+CPU max MHz:         1500.0000
+CPU min MHz:         1500.0000
+BogoMIPS:            108.00
+Flags:               fp asimd evtstrm crc32 cpuid
+
+===============================================================================
+ PI MODEL 4B EEPROM VERSION
+
+Apr 16 2020 18:11:26
+version a5e1b95f320810c69441557c5f5f0a7f2460dfb8 (release)
+timestamp 1587057086
+
+===============================================================================
+ PI MODEL 4B EEPROM UPDATE STATUS
+
+BCM2711 detected
+BOOTLOADER: up-to-date
+CURRENT: Thu 16 Apr 2020 05:11:26 PM UTC (1587057086)
+ LATEST: Thu 16 Apr 2020 05:11:26 PM UTC (1587057086)
+ FW DIR: /lib/firmware/raspberrypi/bootloader/critical
+VL805: up-to-date
+CURRENT: 000137ad
+ LATEST: 000137ad
+
+===============================================================================
+ PI MODEL 4B EEPROM CONFIG
+
+BOOT_UART=0
+  If 1, then UART debug info is available on GPIO14 and 15.
+  Configure the receiving debug terminal at 115200bps, 8 bits,
+  no parity bits, 1 stop bit.
+
+  Default is 0
+
+WAKE_ON_GPIO=1
+  If 1. then "sudo halt" will run low power mode until GPIO3 or
+  GLOBAL_EN is shorted to ground.
+
+  Default is 0 in the original bootloader (2019-05-10)
+  Default is 1 in newer bootloaders
+
+POWER_OFF_ON_HALT=0
+  If 1, and WAKE_ON_GPIO=0, then switch off all PMIC outputs on
+  halt.  This is the lowest possible power state for halt, but
+  may cause problems with some HATs because 5V will still be on.
+  GLOBAL_EN must be shorted to ground in order to boot.
+
+  Default is 0
+
+DHCP_TIMEOUT=45000
+  The timeout in milliseconds for the entire DHCP sequence before
+  failing the current iteration.
+
+  Default is 45000
+  Minimum is 5000
+
+DHCP_REQ_TIMEOUT=4000
+  Timeout in milliseconds before retrying DHCP DISCOVER or DHCP REQ.
+
+  Default is 4000
+  Minimum is 500
+
+TFTP_FILE_TIMEOUT=30000
+  Timeout in milliseconds for an individual file download via TFTP.
+
+  Default is 15000
+  Minimum is 5000
+
+TFTP_PREFIX=0
+  In order to support unique TFTP boot directories for each Pi
+  the bootloader prefixes the filenames with a device specific
+  directory.  If neither start4.elf nor start.elf are found in
+  the prefixed directory then the prefix is cleared.  On earlier
+  models the serial number is used as the prefix, however, on
+  the Pi 4 the MAC address is no longer generated from the serial
+  number making it difficult to automatically create tftpboot
+  directories on the server by inspecting DHCPDISCOVER packets.
+  To support this the TFTP_PREFIX may be customized to either the
+  MAC address, a fixed value, or the serial number.
+
+  0 - Default, use the serial number.
+  1 - Use the string specified by TFTP_PREFIX_STR
+  2 - Use the MAC address
+
+BOOT_ORDER=0x1
+  The BOOT_ORDER setting allows flexible configuration for the
+  priority of different boot modes.  It is represented as 32bit
+  unsigned integer  where each nibble represents a bootmode.
+  The bootmodes are attempted in lowest significant nibble to
+  highest significant nibble order.
+
+  E.g. 0x21 means try SD first followed by network boot then stop.
+  whereas 0x2 would  mean try network boot and then stop without
+  trying to boot from the SD card.
+
+  Retry counters are reset when switching to the next boot mode.
+
+  BOOT ORDER FIELDS:
+  0x0 - NONE (stop with error pattern)
+  0x1 - SD CARD
+  0x2 - NETWORK
+
+  Default: 0x00000001 (with 3 SD boot retries to match the current
+  bootloader behavior.
+
+SD_BOOT_MAX_RETRIES=3
+  Specify the maximum number of times that the bootloader will
+  retry booting from the SD card.
+
+  Default is 0
+  1 means infinite retries
+
+NET_BOOT_MAX_RETRIES=5
+  Specify the maximum number of times that the bootloader will
+  retry network boot.
+
+  Default is 0
+  1 means infinite retries
+
+FREEZE_VERSION=0
+  If 1 then the rpi-eeprom-update will skip automatic updates
+  on this board.  The parameter is not processed by the EEPROM
+  bootloader or recovery.bin since there is no way in software
+  of fully write protecting the EEPROM.  Custom EEPROM update
+  scripts must also check for this flag.
+
+  Default is 0
+
+===============================================================================
+ CMDLINE.TXT
+
+console=tty1 root=PARTUUID=5e3da3da-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait logo.nologo plymouth.ignore-serial-consoles ipv6.disable=1
+
+===============================================================================
+ CONFIG.TXT SETTINGS
+
+arm_64bit=1
+max_framebuffers=2
+gpu_mem=320
+dtparam=i2c_arm=on
+dtparam=i2s=on
+dtparam=spi=on
+dtparam=watchdog=on
+dtparam=audio=on
+dtoverlay=w1-gpio
+dtoverlay=i2c-rtc,pcf8563
+enable_uart=1
+start_x=1
+max_usb_current=1
+force_turbo=1
+
+===============================================================================
+ MEMORY SPLIT
+
+ARM: 1728 MB
+GPU:  320 MB
+
+Note: GPU hardware-accelerated codecs will be disabled if "gpu_mem=16".
+At least "gpu_mem=96" is required for HW codecs to run correctly.
+At least "gpu_mem=128" is required for camera operation.
+
+===============================================================================
+ ACTIVE DISPLAY DRIVER
+
+Broadcom Display Driver
+
+===============================================================================
+ PROCESSOR SPEEDS
+
+ CPU: 1500 MHz
+CORE:  500 MHz
+
+===============================================================================
+ CLOCK FREQUENCIES
+
+Clocks available across all Pi models...
+arm:	frequency(48)=1500398464
+core:	frequency(1)=500000992
+h264:	frequency(28)=0
+isp:	frequency(45)=0
+v3d:	frequency(46)=500000992
+uart:	frequency(22)=48001464
+pwm:	frequency(25)=0
+emmc:	frequency(50)=250000496
+pixel:	frequency(29)=75001464
+vec:	frequency(10)=0
+hdmi:	frequency(0)=0
+dpi:	frequency(4)=0
+
+Additional Pi 4B-specific clocks...
+altscb:	frequency(71)=275062496
+cam0:	frequency(41)=0
+cam1:	frequency(43)=0
+ckl108:	frequency(0)=0
+clk27:	frequency(72)=27000000
+clk54:	frequency(73)=54000000
+debug0:	frequency(68)=0
+debug1:	frequency(69)=0
+dft:	frequency(64)=0
+dsi0:	frequency(7)=0
+dsi0esc:	frequency(11)=0
+dsi1:	frequency(8)=0
+dsi1esc:	frequency(12)=0
+emmc2:	frequency(51)=99997560
+genet125:	frequency(31)=124993656
+genet250:	frequency(30)=250000496
+gisb:	frequency(70)=200008304
+gpclk0:	frequency(18)=0
+gpclk1:	frequency(19)=0
+hevc:	frequency(76)=500000992
+m2mc:	frequency(75)=149989744
+otp:	frequency(26)=13500000
+pcm:	frequency(23)=1977539
+plla:	frequency(100)=3000000000
+pllb:	frequency(100)=3000000000
+pllc:	frequency(100)=3000000000
+plld:	frequency(100)=3000000000
+pllh:	frequency(100)=3180815872
+pulse:	frequency(65)=105468
+smi:	frequency(24)=0
+tectl:	frequency(62)=0
+testmux:	frequency(66)=0
+tsens:	frequency(55)=3348632
+usb:	frequency(49)=27000000
+wdog:	frequency(63)=474609
+xpt:	frequency(67)=0
+
+===============================================================================
+ VOLTAGES
+
+Voltages available across all Pi models...
+   core:   volt=0.8750V
+sdram_c:   volt=1.1000V
+sdram_i:   volt=1.1000V
+sdram_p:   volt=1.1000V
+
+Additional Pi 4B-specific voltages...
+2711:   1p1_0=0.8671V 1p1_1=0.0086V fv_0p85_0=0.0060V fv_0p85_1=0.5581V fv_1p8=1.7918V fv_3p3=3.2921V
+ain1:   volt=0.0000V
+usb_pd:   volt=0.0000V
+uncached:   volt=0.8750V
+
+===============================================================================
+ TEMPERATURE
+
+Temperatures available across all Pi models...
+ GPU Temp: 43.00°C (109.40°F) (***)
+ ARM Temp: 44.79°C (112.62°F) (***)
+
+Additional Pi 4B-specific PMIC temperature...
+PMIC Temp: 42.00°C (107.60°F) (***)
+
+===============================================================================
+ SCALING GOVERNOR
+
+ondemand
+(...but overridden by "force_turbo=1" found in config.txt)
+
+===============================================================================
+ DECODED PROCESSOR THROTTLING STATUS
+
+Throttle Status: 0x0
+
+Undervolted:
+    Currently: no
+   Since Boot: no
+
+Throttled:
+    Currently: no
+   Since Boot: no
+
+Frequency Capped:
+    Currently: no
+   Since Boot: no
+
+Softlimit:
+    Currently: no
+   Since Boot: no
+
+===============================================================================
+ HARDWARE-ACCELERATED CODECS
+
+AGIF: enabled
+FLAC: enabled
+H263: disabled
+H264: enabled
+MJPA: enabled
+MJPB: enabled
+MJPG: enabled
+MPG2: disabled
+MPG4: disabled
+MVC0: enabled
+ PCM: enabled
+THRA: enabled
+VORB: enabled
+ VP6: enabled
+ VP8: enabled
+WMV9: disabled
+WVC1: disabled
+
+Note 1: VP6, VP8, and MJPG are not handled by the hardware video decoder
+in the Broadcom BCM2835 processor, but by the VideoCore GPU.  Enable these
+by running:  sudo raspi-config -> Interfacing Options -> Camera -> Enable
+or by adding "start_x=1" to /boot/config.txt
+
+Note 2: GPU hardware-accelerated codecs will be disabled if "gpu_mem=16".
+At least "gpu_mem=96" is required for the codecs to run correctly.
+
+===============================================================================
+ V4L2-CTL CODECS
+
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Output Multiplanar
+
+	[0]: 'H264' (H.264, compressed)
+	[1]: 'MJPG' (Motion-JPEG, compressed)
+	[2]: 'VP80' (VP8, compressed)
+
+Note: The H.265 codec, new w/ the Pi 4B, isn't part of the videocore.
+It's an entirely new block on the chip, so the VC6 knows nothing
+about it.  Therefore, vcgencmd (which talks to the VC6) also knows
+nothing about it.  The v4l2-ctl command used here, however, should
+show the H.265 codec, when enabled, on the Pi 4B.
+
+===============================================================================
+ VIDEO4LINUX DEVICES
+
+bcm2835-codec-decode (platform:bcm2835-codec):
+	/dev/video10
+	/dev/video11
+	/dev/video12
+
+===============================================================================
+ VIDEO4LINUX DEVICE /dev/video10
+
+Driver Info:
+	Driver name      : bcm2835-codec
+	Card type        : bcm2835-codec-decode
+	Bus info         : platform:bcm2835-codec
+	Driver version   : 4.19.97
+	Capabilities     : 0x84204000
+		Video Memory-to-Memory Multiplanar
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x04204000
+		Video Memory-to-Memory Multiplanar
+		Streaming
+		Extended Pix Format
+Media Driver Info:
+	Driver name      : bcm2835-codec
+	Model            : bcm2835-codec
+	Serial           : 0000
+	Bus info         : platform:bcm2835-codec
+	Media version    : 4.19.97
+	Hardware revision: 0x00000001 (1)
+	Driver version   : 4.19.97
+Entity Info:
+	ID               : 1
+	Name             : bcm2835-codec-decode-source
+	Type             : V4L2 I/O
+	Pad              : 0: Source
+	Link             : 1->3: Data, Enabled, Immutable
+Priority: 2
+Format Video Capture Multiplanar:
+	Width/Height      : 640/480
+	Pixel Format      : 'YU12' (Planar YUV 4:2:0)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : Rec. 709
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Default
+	Plane 0           :
+	   Bytes per Line : 640
+	   Size Image     : 460800
+Format Video Output Multiplanar:
+	Width/Height      : 640/480
+	Pixel Format      : 'H264' (H.264)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : Rec. 709
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Default
+	Plane 0           :
+	   Bytes per Line : 0
+	   Size Image     : 524288
+Selection: compose, Left 0, Top 0, Width 640, Height 480, Flags: 
+Selection: compose_default, Left 0, Top 0, Width 640, Height 480, Flags: 
+Selection: compose_bounds, Left 0, Top 0, Width 640, Height 480, Flags: 
+
+User Controls
+
+  min_number_of_capture_buffers 0x00980927 (int)    : min=1 max=1 step=1 default=1 value=1 flags=read-only
+
+===============================================================================
+ VIDEO4LINUX DEVICE /dev/video11
+
+Driver Info:
+	Driver name      : bcm2835-codec
+	Card type        : bcm2835-codec-encode
+	Bus info         : platform:bcm2835-codec
+	Driver version   : 4.19.97
+	Capabilities     : 0x84204000
+		Video Memory-to-Memory Multiplanar
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x04204000
+		Video Memory-to-Memory Multiplanar
+		Streaming
+		Extended Pix Format
+Media Driver Info:
+	Driver name      : bcm2835-codec
+	Model            : bcm2835-codec
+	Serial           : 0000
+	Bus info         : platform:bcm2835-codec
+	Media version    : 4.19.97
+	Hardware revision: 0x00000001 (1)
+	Driver version   : 4.19.97
+Entity Info:
+	ID               : 15
+	Name             : bcm2835-codec-encode-source
+	Type             : V4L2 I/O
+	Pad              : 0: Source
+	Link             : 15->17: Data, Enabled, Immutable
+Priority: 2
+Format Video Capture Multiplanar:
+	Width/Height      : 640/480
+	Pixel Format      : 'H264' (H.264)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : Rec. 709
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Default
+	Plane 0           :
+	   Bytes per Line : 0
+	   Size Image     : 524288
+Format Video Output Multiplanar:
+	Width/Height      : 640/480
+	Pixel Format      : 'YU12' (Planar YUV 4:2:0)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : Rec. 709
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Default
+	Plane 0           :
+	   Bytes per Line : 640
+	   Size Image     : 460800
+Selection: crop, Left 0, Top 0, Width 640, Height 480, Flags: 
+Selection: crop_default, Left 0, Top 0, Width 640, Height 480, Flags: 
+Selection: crop_bounds, Left 0, Top 0, Width 640, Height 480, Flags: 
+
+Codec Controls
+
+             video_bitrate_mode 0x009909ce (menu)   : min=0 max=1 default=0 value=0 flags=update
+                  video_bitrate 0x009909cf (int)    : min=25000 max=25000000 step=25000 default=10000000 value=10000000
+         repeat_sequence_header 0x009909e2 (bool)   : default=0 value=0
+                force_key_frame 0x009909e5 (button) : flags=write-only, execute-on-write
+            h264_i_frame_period 0x00990a66 (int)    : min=0 max=2147483647 step=1 default=60 value=60
+                     h264_level 0x00990a67 (menu)   : min=0 max=13 default=11 value=11
+                   h264_profile 0x00990a6b (menu)   : min=0 max=4 default=4 value=4
+
+===============================================================================
+ VIDEO4LINUX DEVICE /dev/video12
+
+Driver Info:
+	Driver name      : bcm2835-codec
+	Card type        : bcm2835-codec-isp
+	Bus info         : platform:bcm2835-codec
+	Driver version   : 4.19.97
+	Capabilities     : 0x84204000
+		Video Memory-to-Memory Multiplanar
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x04204000
+		Video Memory-to-Memory Multiplanar
+		Streaming
+		Extended Pix Format
+Media Driver Info:
+	Driver name      : bcm2835-codec
+	Model            : bcm2835-codec
+	Serial           : 0000
+	Bus info         : platform:bcm2835-codec
+	Media version    : 4.19.97
+	Hardware revision: 0x00000001 (1)
+	Driver version   : 4.19.97
+Entity Info:
+	ID               : 29
+	Name             : bcm2835-codec-isp-source
+	Type             : V4L2 I/O
+	Pad              : 0: Source
+	Link             : 29->31: Data, Enabled, Immutable
+Priority: 2
+Format Video Capture Multiplanar:
+	Width/Height      : 640/480
+	Pixel Format      : 'YUYV' (YUYV 4:2:2)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : Rec. 709
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Default
+	Plane 0           :
+	   Bytes per Line : 1280
+	   Size Image     : 614400
+Format Video Output Multiplanar:
+	Width/Height      : 640/480
+	Pixel Format      : 'BA81' (8-bit Bayer BGBG/GRGR)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : Rec. 709
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Default
+	Plane 0           :
+	   Bytes per Line : 640
+	   Size Image     : 307200
+Crop Capability Video Capture:
+	Bounds      : Left 0, Top 0, Width 0, Height 0
+	Default     : Left 0, Top 0, Width 0, Height 0
+	Pixel Aspect: 1/1
+Crop Capability Video Output:
+	Bounds      : Left 0, Top 0, Width 0, Height 0
+	Default     : Left 0, Top 0, Width 0, Height 0
+	Pixel Aspect: 1/1
+Crop: Left 0, Top 0, Width 0, Height 0
+Selection: crop, Left 0, Top 0, Width 0, Height 0, Flags: 
+Selection: crop_default, Left 0, Top 0, Width 0, Height 0, Flags: 
+Selection: crop_bounds, Left 0, Top 0, Width 0, Height 0, Flags: 
+Selection: compose, Left 0, Top 0, Width 0, Height 0, Flags: 
+Selection: compose_default, Left 0, Top 0, Width 0, Height 0, Flags: 
+Selection: compose_bounds, Left 0, Top 0, Width 0, Height 0, Flags: 
+Selection: compose_padded, Left 0, Top 0, Width 0, Height 0, Flags: 
+Selection: native_size, Left 0, Top 0, Width 0, Height 0, Flags: 
+Selection: crop, Left 0, Top 0, Width 0, Height 0, Flags: 
+Selection: crop_default, Left 0, Top 0, Width 0, Height 0, Flags: 
+Selection: crop_bounds, Left 0, Top 0, Width 0, Height 0, Flags: 
+Selection: compose, Left 0, Top 0, Width 0, Height 0, Flags: 
+Selection: compose_default, Left 0, Top 0, Width 0, Height 0, Flags: 
+Selection: compose_bounds, Left 0, Top 0, Width 0, Height 0, Flags: 
+Selection: compose_padded, Left 0, Top 0, Width 0, Height 0, Flags: 
+Selection: native_size, Left 0, Top 0, Width 0, Height 0, Flags: 
+
+===============================================================================
+ CAMERA
+
+supported=1 detected=0
+
+===============================================================================
+ W1-GPIO (1-WIRE INTERFACE) DRIVERS
+
+ Loaded Modules...
+w1_gpio                16384  0
+wire                   45056  1 w1_gpio
+
+ Discovered 1-WIRE Drivers...
+w1_master_driver
+w1_slave_driver
+
+===============================================================================
+ SPI (SERIAL PERIPHERAL INTERFACE) DRIVERS
+
+ Loaded Modules...
+spidev                 20480  0
+spi_bcm2835            20480  0
+
+ Discovered SPI Drivers...
+spidev
+stmpe-spi
+
+===============================================================================
+ I2S (INTER-IC SOUND) DRIVERS
+
+ Loaded Modules...
+snd_soc_bcm2835_i2s    20480  0
+regmap_mmio            16384  1 snd_soc_bcm2835_i2s
+snd_soc_core          196608  1 snd_soc_bcm2835_i2s
+snd_pcm               114688  4 snd_soc_bcm2835_i2s,snd_bcm2835,snd_soc_core,snd_pcm_dmaengine
+
+ Discovered I2S Drivers...
+bcm2835-i2s
+
+===============================================================================
+ I2C (INTER-IC COMMUNICATION) DRIVERS
+
+ Loaded Modules...
+i2c_bcm2835            16384  0
+i2c_dev                20480  0
+i2c_bcm2708            16384  0
+
+ Discovered I2C Drivers...
+rtc-pcf8563
+
+===============================================================================
+ I2CDETECT
+
+i2c-1	i2c       	bcm2835 I2C adapter             	I2C adapter
+
+ I2C BUS: 1
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
+10: -- -- -- -- 14 -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- UU -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- -- --                         
+
+===============================================================================
+ RTC (REALTIME CLOCK)
+
+[    5.329448] rtc-pcf8563 1-0051: rtc core: registered rtc-pcf8563 as rtc0
+
+rtc_pcf8563            16384  0
+
+lrwxrwxrwx 1 root root      4 May 10 16:25 /dev/rtc -> rtc0
+crw------- 1 root root 253, 0 May 10 16:25 /dev/rtc0
+
+Hardware RTC says:
+2020-05-10 18:00:18.801434-04:00
+
+Operating System says:
+Sun 10 May 2020 06:00:19 PM EDT
+
+===============================================================================
+ HARDWARE RANDOM NUMBER GENERATOR (***)
+
+rngtest 2-unofficial-mt.14
+Copyright (c) 2004 by Henrique de Moraes Holschuh
+This is free software; see the source for copying conditions.  There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+rngtest: starting FIPS tests...
