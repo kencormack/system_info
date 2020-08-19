@@ -38,7 +38,8 @@ commands that need root privilege.
 - initramfs-tools
 - iproute2
 - libraspberrypi-bin
-- lshw net-tools
+- lshw
+- net-tools
 - procps
 - rpi-eeprom
 - usbutils
