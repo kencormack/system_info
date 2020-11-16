@@ -1,5 +1,3 @@
-
-===============================================
 CHANGES: V2.0.1
  1. Added check for required packages "lsb-release" and "systemd".
  2. Deleted commented lines used during Pi 400 testing.
