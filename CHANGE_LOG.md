@@ -1,4 +1,7 @@
 ```
+CHANGES: V3.1.7
+ 1. Updated to identify the new Pi Zero 2 W
+
 CHANGES: V3.1.5
  1. Changed agnostics to supplemental package
  2. Fixed a "not found" problem with an errant function call
